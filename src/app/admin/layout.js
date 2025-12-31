@@ -1,11 +1,14 @@
-import Header from "@/components/costum/admin/header"
-import { SidebarProvider } from "@/components/ui/sidebar"
+import { AppSidebar } from "@/components/costum/admin/sidebar"
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 
 export default function Layout({ children }) {
   return (
     <SidebarProvider>
-    
-      {children}
+      <AppSidebar />
+      <main>
+        <SidebarTrigger />
+        {children}
+      </main>
     </SidebarProvider>
   )
 }
