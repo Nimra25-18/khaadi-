@@ -32,7 +32,7 @@ function Country() {
      
       <img
         src="https://www.khaadi.com/on/demandware.static/-/Library-Sites-KhaadiSharedLibrary/default/dwb7ff3008/images/splash/splash-img-desktop.jpg"
-        alt="background"
+        alt="pic"
         className="absolute inset-0 w-full h-full object-cover"
       />
 
@@ -40,17 +40,21 @@ function Country() {
       <div className="absolute top-10 right-5 md:top-[120px] md:right-[165px]">
 
        
-        <img
-          src="https://crystalpng.com/wp-content/uploads/2025/08/KHAADI-Logo.png"
-          className="w-40 md:w-[220px]  "
-        />
+        <Image
+  src="/images/bannerpics/KHAADI-Logo.png"
+  alt="khaadi logo"
+  width={220}
+  height={80}
+  className="w-40 md:w-[220px]"
+  priority
+/>
 
       
         <div className="mt-4 bg-white/50  backdrop-blur-lg p-3 md:p-6 rounded-xl w-72 md:w-[340px] shadow-xl h-[320px]">
           <h2 className="font-semibold text-gray-700 mb-3 text-center text-lg">
             Select Your Country
           </h2>
-          <div className="border-[1px] border-b-gray-700 bg-white/30  "></div>
+          <div className="border border-b-gray-700 bg-white/30  "></div>
 
           <ul className="space-y-3">
             {countries.map((c) => (
